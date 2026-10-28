@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Hackathon 2026 - Gallery</title>
+</head>
+<body>
+  <h1>Event Gallery</h1>
+    <p>
+    <a href="../index.html">Home</a> |
+    <a href="../hackaton/index.html">Gallery</a> |
+    <a href="../hackaton3/index.html">Register</a>
+  </p>
+  <h2>Links</h2>
+  <p>
+    <a href="http://www.w3schools.com/" target="_blank">Visit W3Schools (new tab)</a> |
+    <a href="../hackaton/index.html">Back to About page</a> |
+    <a href="#schedule">Jump to schedule</a>
+  </p>
+
+  <h2>Image</h2>
+  <img src="https://www.w3schools.com/html/workplace.jpg"
+       alt="A desk with a computer, phone and coffee"
+       width="400" height="379" usemap="#workmap" />
+  <map name="workmap">
+    <area shape="rect" coords="34,44,270,350" alt="Computer" href="#computer" />
+    <area shape="rect" coords="290,172,333,250" alt="Phone" href="#phone" />
+    <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="#coffee" />
+  </map>
+
+  <h2>Picture element</h2>
+  <p>Resize the browser window to load different images.</p>
+  <picture>
+    <source media="(min-width: 650px)" srcset="https://www.w3schools.com/tags/img_pink_flowers.jpg">
+    <source media="(min-width: 465px)" srcset="https://www.w3schools.com/tags/img_white_flower.jpg">
+    <img src="https://www.w3schools.com/tags/img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+  </picture>
+
+  <h2>Video</h2>
+  <video width="320" height="240" controls>
+    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+  </video>
+
+  <h2>Audio</h2>
+  <audio controls>
+    <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+    <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <h2>Figure</h2>
+  <figure>
+    <img src="https://www.w3schools.com/html/workplace.jpg" alt="Workplace" width="200" height="190" />
+    <figcaption>A workplace during the hackathon</figcaption>
+  </figure>
+
+  <h2 id="schedule">Schedule</h2>
+  <table>
+    <caption>Event schedule</caption>
+    <colgroup>
+      <col style="background-color:lightgray">
+      <col span="2">
+    </colgroup>
+    <thead>
+      <tr><th>Time</th><th colspan="2">Activity and place</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>09:00</td><td>Registration</td><td>Main hall</td></tr>
+      <tr><td>10:00</td><td>Building</td><td>Rooms 1-4</td></tr>
+      <tr><td>16:00</td><td>Presentations</td><td rowspan="2">Main hall</td></tr>
+      <tr><td>17:30</td><td>Awards</td></tr>
+    </tbody>
+    <tfoot>
+      <tr><td>Total</td><td colspan="2">4 sessions</td></tr>
+    </tfoot>
+  </table>
+</body>
+</html>
